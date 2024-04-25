@@ -23,42 +23,54 @@
 
   <!-- DIV que armazenará todos os botões -->
   <div id="botoes">
-    <!-- Botão X - -->
+    <!-- Botão x - -->
     <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
-    <!-- Botão X - -->
-    <input type="button" value="X" />
-    <!--Fim Botão X-->
+    <!--Fim Botão x - Atualizar a pagina-->
+
+    <!-- Botão 01 - -->
+    <input type="button" value="Atualizar" onclick="window.location.reload()" />
+    <!--Fim Botão 01-->
+
+    <!-- Botão 02 - Tamanho da fonte - -->
+    <input type="button" value="Tamanho Fonte" onclick="mudartamanhofonte()" />
+    <!--Fim Botão 02-->
+
+    <!-- Botão 03 - muda cor fonte - -->
+    <input type="button" value="Cor fonte" onclick="mudarcorfonte()" />
+    <!--Fim Botão 03-->
+
+    <!-- Botão 04 - muda backgrounddiv - -->
+    <input type="button" value="backdiv" onclick="backdiv()" />
+    <!--Fim Botão 04-->
+
+    <!-- Botão 05 - muda texto para italico - -->
+    <input type="button" value="italico" onclick="italico()" />
+    <!--Fim Botão 05-->
+
+    <!-- Botão 06 - negrito- -->
+    <input type="button" value="negrito" onclick="negrito()" />
+    <!--Fim Botão 06-->
+
+    <!-- Botão 07 - incluir borda - -->
+    <input type="button" value="incluir borda" onclick="border()" />
+    <!--Fim Botão 07-->
+
+    <!-- Botão 08 - excluir border - -->
+    <input type="button" value="tira borda" onmouseenter="excluirborder()" />
+    <!--Fim Botão 08-->
+
+    <!-- Botão 09 esconder div - -->
+    <input type="button" value="Esconder Div" onclick="esconderdiv()"/>
+    <!--Fim Botão 09-->
+
+    <!-- Botão 10 - reaparece div - -->
+    <input type="button" value="Reaparece Div" onclick="reaparecediv()" />
+    <!--Fim Botão 10-->
+
+    <!-- Botão 11 - nao - -->
+    <input type="button" value="nao" onclick="nao()" />
+    <!--Fim Botão 11-->
+
     <!-- Botão X - -->
     <input type="button" value="X" />
     <!--Fim Botão X-->
@@ -85,58 +97,68 @@
   <img id="image" src="xuxa.jpg">
 
   <script> // Começa a brincadeira com JS
-    // Botão X - xx
-    function x() {
-
+    // Botão 02 - Tamanho fonte
+    function mudatamanhofonte() {
+      document.getElementById("manipula").style.fontSize = "20pt";
     }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
+    //fim do Botão 02
+
+    // Botão 3 - Cor fonte
+    function mudarcorfonte() {
+      document.getElementById("manipula").style.color = "#ffffff"
 
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
+//fim do Botão 3
+
+    // Botão 04 -muda background
+    function backdiv() {
+      document.getElementById("manipula"). style.backgroundColor = "black"
 
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
+//fim do Botão 04
 
+    // Botão 05 - muda italico
+    function italico() {
+      document.getElementById("manipula").style.fontStyle = "italic"
 }
-//fim do Botão X
-    // Botão X - xx
-    function x() {
+//fim do Botão 05
+
+    // Botão 06 - xx
+    function negrito() {
+      document.getElementById("manipula").style.fontWeight = "bold"
+    }
+    //fim do Botão 06
+
+    // Botão 07 - incluir borda
+    function border() {
+      document.getElementById("manipula").style.border = "2px solid black"
+    }
+    //fim do Botão 07
+
+    // Botão 08 - excliir borda
+    function excluirborder() {
+      document.getElementById("manipula").style.border = "0px solid black"
+    }
+    //fim do Botão 08
+
+    // Botão 09 - Esconder Div
+    function esconderdiv() {
+      document.getElementById("manipula").style.display = "none"
 
     }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
+    //fim do Botão 09
+
+          
+    // Botão 10 - Reaparece Div
+    function reaparecediv() {
+      document.getElementById("manipula").style.display = "block"
 
     }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
+    //fim do Botão 10
 
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
-
-    }
-    //fim do Botão X
-    // Botão X - xx
-    function x() {
+    // Botão 11 - nao
+    function nao() {
+      document.getElementsByClassName("chamada")[0].innerHTML = "Neste Botao NAO"
 
     }
     //fim do Botão X
